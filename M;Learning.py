@@ -45,36 +45,6 @@ dataset.head(20)
 dataset.groupby('class').size()
 
 
-# In[ ]:
-
-
-
-
-
-# In[26]:
-
-
-dataset.plot(kind = 'box',subplots = True,layout = (2,2))
-ppy.show()
-
-
-# In[25]:
-
-
-dataset.hist()
-ppy.show()
-
-
-# In[29]:
-
-
-scatter_matrix(dataset)
-ppy.show()
-
-
-# In[31]:
-
-
 array = dataset.values
 X = array[:,0:4]
 Y = array[:,4]
